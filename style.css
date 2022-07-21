@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@800;900&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    border: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Menu - Barra de menu superior */
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+.container-menu{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+
+nav{
+    display: inline;
+}
+
+nav span{
+    margin-right: 10px;
+}
+
+nav span a{
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    height: 1.8em;
+    padding: 2% 4%;
+}
+
+.container-perfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    width: 20%;
+    margin-right: 0;
+    padding: 2% 4%;
+}
+
+.container-perfil > :nth-child(n){
+    margin-right: 8px;
+}
+
+header #src-perfil{
+    height: 1.8em;
+    border-radius: 5px;
+}
+
+/* Conteudo - Primeira View */
+
+section{
+    padding: 5%;
+}
+
+.section-home{
+    background-image: linear-gradient(to right, rgb(22, 22, 22), rgb(22, 22, 22), rgb(22, 22, 22, 0.8), rgba(22, 22, 22, 0), rgba(22, 22, 22, 0)), url("imgs/preview-film.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content{
+    width: 40vw;
+}
+
+.content > :nth-child(n){
+    padding: 10px 0;
+}
+
+.section-home #logo-filmes{
+    width: 35vw;
+    margin: 5% 0 3% 0;
+}
+
+.section-home .info{
+    display: flex;
+    flex-direction: row;
+}
+
+.section-home .info p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 15px;
+    color: rgb(175, 175, 175);
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+#classificacao{
+    border: solid 1px rgb(175, 175, 175);
+    padding: 1px 8px;
+}
+
+.section-home .button_film{
+    border: solid 1px white;
+    padding: 6px 10px;
+    margin-right: 1%;
+    cursor: pointer;
+}
+
+.section-home .button_film:hover{
+    border-color: red;
+    color: red;
+}
+
+/* Article */
+
+.art_netflix{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5% 0 -8% 0;
+    background-color: rgb(37, 37, 37);
+    box-shadow: 0 0 40px black;
+    padding-right: 2%;
+}
+
+.art_netflix .art_desc{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.art_netflix .logo{
+    margin: 0% -3% 0% -1%;
+}
+
+.art_netflix span{
+    font-family: 'Albert Sans', 'Roboto', Arial;
+    font-size: 1em;
+    font-weight: 100;
+    margin-left: 4%;
+    background-color: red;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+/* Seleção de filmes - slides */
+
+h2{
+    margin: 20px 0;
+}
+
+.slider{
+    display: flex;
+    align-items: center;
+    width: 90vw;
+}
+
+.slide{
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    overflow: hidden;
+    justify-content: end;
+}
+
+.item{
+    width: 100%;
+}
+
+.item:first-child{
+    margin-left: -100%;
+}
+
+.item img{
+    width: 12vw;
+    height: 16vw;
+}
+
+.button_pass{
+    font-family: 'Albert Sans', 'Roboto', Arial;
+    font-size: 1.5em;
+    padding: 5px 10px;
+    margin: 5px;
+    color: red;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
