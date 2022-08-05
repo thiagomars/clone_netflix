@@ -1,3 +1,7 @@
 # clone_netflix
 
-### ainda em processo de finalização
+### A Imagem abaixo mostra a interface completa da página WEB.
+
+*ainda em processo de finalização*
+
+![Captura de tela da Interface da Página](screen.png)
